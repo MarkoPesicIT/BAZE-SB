@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<!--suppress ALL -->
 <html lang="en">
 <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" th:href="@{/css/style.css}">
-      <script type="text/javascript" th:src="@{/js/script.js}" />
+      <script type="text/javascript" th:src="@{/js/script.js}"></script>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <title>POCETNA</title>
@@ -17,10 +18,10 @@
                   <div class="topNav-container">
                         <div class="nav">
                               <div class="ikonica-container" id="btnPocetna">
-                                    <img th:src="@{/Ikonice/Nav/pocetnaIcon.png}" id="navIkonica" alt="ikonicaPocetna" />
+                                    <img th:src="@{/Ikonice/Nav/pocetnaIcon.png}" class="navIkonica" alt="ikonicaPocetna" />
                               </div>
                               <div class="ikonicaHover">
-                                    <h1 id="navText">POCETNA</h1>
+                                    <h1 class="navText">POCETNA</h1>
                                     <div class="navUnderline">
                                           <div class="kocka bgNav"></div>
                                           <div class="linija bgNav"></div>
@@ -29,10 +30,10 @@
                         </div>
                         <div class="nav">
                               <div class="ikonica-container" id="btnPozajmice">
-                                    <img th:src="@{/Ikonice/Nav/pozajmiceIcon.png}" id="navIkonica" alt="ikonicaPozajmice" />
+                                    <img th:src="@{/Ikonice/Nav/pozajmiceIcon.png}" class="navIkonica" alt="ikonicaPozajmice" />
                               </div>
                               <div class="ikonicaHover">
-                                    <h1 id="navText">POZAJMICE</h1>
+                                    <h1 class="navText">POZAJMICE</h1>
                                     <div class="navUnderline">
                                           <div class="kocka bgNav"></div>
                                           <div class="linija bgNav"></div>
@@ -41,10 +42,10 @@
                         </div>
                         <div class="nav">
                               <div class="ikonica-container" id="btnClanovi">
-                                    <img th:src="@{/Ikonice/Nav/korisniciIcon.png}" id="navIkonica" alt="ikonicaClanovi" />
+                                    <img th:src="@{/Ikonice/Nav/korisniciIcon.png}" class="navIkonica" alt="ikonicaClanovi" />
                               </div>
                               <div class="ikonicaHover">
-                                    <h1 id="navText">CLANOVI</h1>
+                                    <h1 class="navText">CLANOVI</h1>
                                     <div class="navUnderline">
                                           <div class="kocka bgNav"></div>
                                           <div class="linija bgNav"></div>
@@ -53,10 +54,10 @@
                         </div>
                         <div class="nav">
                               <div class="ikonica-container" id="btnKnjige">
-                                    <img th:src="@{/Ikonice/Nav/knjigeIcon.png}" id="navIkonica" alt="ikonicaKnjige" />
+                                    <img th:src="@{/Ikonice/Nav/knjigeIcon.png}" class="navIkonica" alt="ikonicaKnjige" />
                               </div>
                               <div class="ikonicaHover">
-                                    <h1 id="navText">KNJIGE</h1>
+                                    <h1 class="navText">KNJIGE</h1>
                                     <div class="navUnderline">
                                           <div class="kocka bgNav"></div>
                                           <div class="linija bgNav"></div>
@@ -65,10 +66,10 @@
                         </div>
                         <div class="nav">
                               <div class="ikonica-container" id="btnAutori">
-                                    <img th:src="@{/Ikonice/Nav/autoriIcon.png}" id="navIkonica" alt="ikonicaAutori" />
+                                    <img th:src="@{/Ikonice/Nav/autoriIcon.png}" class="navIkonica" alt="ikonicaAutori" />
                               </div>
                               <div class="ikonicaHover">
-                                    <h1 id="navText">AUTORI</h1>
+                                    <h1 class="navText">AUTORI</h1>
                                     <div class="navUnderline">
                                           <div class="kocka bgNav"></div>
                                           <div class="linija bgNav"></div>
@@ -77,10 +78,10 @@
                         </div>
                         <div class="nav">
                               <div class="ikonica-container" id="btnIzdavackeKuce">
-                                    <img th:src="@{/Ikonice/Nav/izdavackaKucaIcon.png}" id="navIkonica" alt="ikonicaIzdavackeKuce" />
+                                    <img th:src="@{/Ikonice/Nav/izdavackaKucaIcon.png}" class="navIkonica" alt="ikonicaIzdavackeKuce" />
                               </div>
                               <div class="ikonicaHover">
-                                    <h1 id="navText">IZDAV. KUCE</h1>
+                                    <h1 class="navText">IZDAV. KUCE</h1>
                                     <div class="navUnderline">
                                           <div class="kocka bgNav"></div>
                                           <div class="linija bgNav"></div>
@@ -92,10 +93,10 @@
             <div class="bottomNav-container">
                   <div class="nav">
                         <div class="ikonica-container" id="btnZaposleni">
-                              <img th:src="@{/Ikonice/Nav/ZaposleniIcon.png}" id="navIkonica" alt="ikonicaZaposleni" />
+                              <img th:src="@{/Ikonice/Nav/ZaposleniIcon.png}" class="navIkonica" alt="ikonicaZaposleni" />
                         </div>
                         <div class="ikonicaHover">
-                              <h1 id="navText">ZAPOSLENI</h1>
+                              <h1 class="navText">ZAPOSLENI</h1>
                               <div class="navUnderline">
                                     <div class="kocka bgNav"></div>
                                     <div class="linija bgNav"></div>
@@ -104,10 +105,10 @@
                   </div>
                   <div class="nav">
                         <div class="ikonica-container" id="btnPodesavanja">
-                              <img style="rotate: 30deg; scale: 1.4;" th:src="@{/Ikonice/Nav/podesavanjaIcon.png}" id="navIkonica" alt="ikonicaPodesavanja" />
+                              <img style="rotate: 30deg; scale: 1.4;" th:src="@{/Ikonice/Nav/podesavanjaIcon.png}" class="navIkonica" alt="ikonicaPodesavanja" />
                         </div>
                         <div class="ikonicaHover">
-                              <h1 id="navText">PODESAVANJA</h1>
+                              <h1 class="navText">PODESAVANJA</h1>
                               <div class="navUnderline">
                                     <div class="kocka bgNav"></div>
                                     <div class="linija bgNav"></div>
@@ -131,13 +132,13 @@
                         <div class="textOsnovniPodaciKnjiga">
                               <h1>Autor:</h1>
                               <h2><span class="outputOPK autorKnjige">Ime i prezime</span></h2>
-                              <hr id="linija" />
+                              <hr class="linija" />
                               <h1>Broj Strana:</h1>
                               <h2><span class="outputOPK brojStranaKnjige">99999</span></h2>
-                              <hr id="linija" />
+                              <hr class="linija" />
                               <h1>Izdavacka kuca:</h1>
                               <h2><span class="outputOPK izdavackaKucaKnjige">Izdavacka Kuca</span></h2>
-                              <hr id="linija" />
+                              <hr class="linija" />
                         </div>
                   </div>
                   <div class="donjideoIOK">
@@ -153,10 +154,10 @@
                                     <div id="tab-1" class="tab tab-content active">
                                           <h1>Pozajmljeno primeraka:</h1>
                                           <h2><span class="outputOPK ostaloPrimeraka">9999999999</span></h2>
-                                          <hr id="linija" />
+                                          <hr class="linija" />
                                           <h1>Ostalo primeraka:</h1>
                                           <h2><span class="outputOPK ostaloPrimeraka">9999999999</span></h2>
-                                          <hr id="linija" />
+                                          <hr class="linija" />
                                           <h1>Ukupno primeraka:</h1>
                                           <h2><span class="outputOPK ostaloPrimeraka">9999999999</span></h2>
                                     </div>
@@ -193,11 +194,11 @@
                   </div>
                   <div class="dodajClana-container">
                         <div class="dodajclanaBG">
-                              <img class="dodajClanaIkoncia" id="navIkonica" th:src="@{/Ikonice/Pocetna/dodajKorisnikaDugme.png}" alt />
+                              <img class="dodajClanaIkoncia navIkonica" th:src="@{/Ikonice/Pocetna/dodajKorisnikaDugme.png}" alt />
                         </div>
                         <div class="dodavanjeClanaPopUp">
                               <h1>DODAJ ČLANA</h1>
-                              <hr id="linija" />
+                              <hr class="linija" />
                               <input id="imeDodajClana" type="text" class="unosCont" placeholder="Ime" />
                               <input id="prezimeDodajClana" type="text" class="unosCont" placeholder="Prezime" />
                               <input id="telefonDodajClana" type="text" class="unosCont" placeholder="Broj telefona" />

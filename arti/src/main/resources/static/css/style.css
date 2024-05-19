@@ -90,7 +90,7 @@ a
 	flex-direction: row;
 }
 
-#navIkonica
+.navIkonica
 {
 	width: 3rem;
 }
@@ -130,12 +130,12 @@ a
 	outline: 0.4rem solid var(--primary);
 }
 
-#navText
+.navText
 {
 	color: #252525be;
 }
 
-.nav:hover #navText
+.nav:hover .navText
 {
 	color: var(--primary);
 }
@@ -511,7 +511,7 @@ span.population
 	transition: opacity 0.3s ease-in-out;
 }
 
-#linija
+.linija
 {
 	width: 100%;
 	border: 2px solid var(--primary);
