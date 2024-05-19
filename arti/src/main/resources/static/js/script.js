@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Nasumican broj: " + randomNumber);
         $.ajax({
             type: "POST",
-            url: "../dodajClana.php",
+            url: "../name of file",
             data: {
                 ime: ime,
                 prezime: prezime,
@@ -281,7 +281,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log("Email sent successfully!");
                 console.log("AJAX request successful");
                 console.log(response); // Log the response from the server
-                console.log("-----------------------------------------------------------------------");
+                console.log("------------------------------------------------------------------------------------");
 
             },
             error: function (error) {
@@ -303,32 +303,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    // pokazivanje pozajmice
-    $(document).ready(function() {
-        $.ajax({
-            url: '../getPozajmice.php',
-            type: 'GET',
-            dataType: 'json',
-            success: function(data) {
-                $.each(data, function(index, row) {
-                    var newRow = '<tr>' +
-                        '<td>' + row.stanje + '</td>' +
-                        '<td>' + row.broj_clanske_karte + '</td>' +
-                        '<td>' + row.naziv_knjige + '</td>' +
-                        '<td>' + row.autor_knjige + '</td>' +
-                        '<td>' + row.inv_broj + '</td>' +
-                        '<td>' + row.datum_pozajmice + '</td>' +
-                        '<td>' + row.datum_povratka + '</td>' +
-                        '<td>' + row.beleska + '</td>' +
-                        '</tr>';
-                    $('#tabelaPozajmica').append(newRow);
-                });
-            },
-            error: function(xhr, status, error) {
-                console.error('AJAX Error: ' + status + ' - ' + error);
-            }
-        });
-    });
 
     window.onload = function () {
         applyBackgroundColors();
