@@ -1,8 +1,7 @@
 package com.biblioteka.arti;
 
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@RestController
 public interface ClanoviRepo extends JpaRepository<Clanovi, Long> {
-    void save(Clanovi member);
+
 }

@@ -7,12 +7,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/Clanovi")
 public class PocetnaController {
-    private final ClanoviRepo memberRepository;
-
-    public PocetnaController(ClanoviRepo memberRepository) {
-        this.memberRepository = memberRepository;
-    }
-
+    @Autowired
+    private ClanoviRepo memberRepository;
     @PostMapping("/add")
     public ResponseEntity<String> addMember(@RequestBody Clanovi member) {
         // Save member to the database
