@@ -1,0 +1,6 @@
+com\biblioteka\arti\ArtiApplication.class
+com\biblioteka\arti\ClanoviRepo.class
+com\biblioteka\arti\DBUtil.class
+com\biblioteka\arti\WebController.class
+com\biblioteka\arti\PocetnaController.class
+com\biblioteka\arti\Clanovi.class

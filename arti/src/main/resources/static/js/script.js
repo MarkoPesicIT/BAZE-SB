@@ -243,13 +243,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     btn_potvrdipopDodajclana.addEventListener("click", function () {
-        const ime = document.getElementById("imeDodajClana").value;
-        const prezime = document.getElementById("prezimeDodajClana").value;
-        const brojTelefona = document.getElementById("telefonDodajClana").value;
-        const email = document.getElementById("emailDodajClana").value;
-        const datumRodjenja = document.getElementById("datumDodajClana").value;
-        const adresaStanovanja = document.getElementById("adresaDodajClana").value;
-        const clanarina = document.querySelector(".toggle").textContent;
+        const user = {
+            ime: document.getElementById("imeDodajClana").value,
+            prezime: document.getElementById("prezimeDodajClana").value,
+            brojTelefona: document.getElementById("telefonDodajClana").value,
+            email: document.getElementById("emailDodajClana").value,
+            datumRodjenja: document.getElementById("datumDodajClana").value,
+            adresaStanovanja: document.getElementById("adresaDodajClana").value,
+            clanarina: document.querySelector(".toggle").textContent
+        }
         console.log("Klknuto dugme za potvrdu");
 
         // Generate random number
@@ -257,17 +259,11 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Nasumican broj: " + randomNumber);
         $.ajax({
             type: "POST",
-            url: "../name of file",
-            data: {
-                ime: ime,
-                prezime: prezime,
-                brojTelefona: brojTelefona,
-                email: email,
-                datumRodjenja: datumRodjenja,
-                adresaStanovanja: adresaStanovanja,
-                clanarina: clanarina,
-                pozivnabroj: 1234,
+            url: "/api/Clanovi/add",
+            headers: {
+            'Content-Type': 'application/json'  // Ensure the correct header is set
             },
+            body: JSON.stringify(user),  // Convert the user object to JSON string
             success: function (response) {
                 console.log("------------------------------SLANJE EMAILA-----------------------------------------");
                 console.log("Ime: " + ime);
@@ -301,8 +297,6 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Kliknuto dugme za pozajmljivanje knjige");
         // funkcija za prAvljenje pozajmicew dodaj ovdde sta streba
     });
-
-
 
     window.onload = function () {
         applyBackgroundColors();
