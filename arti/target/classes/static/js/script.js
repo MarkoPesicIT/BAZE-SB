@@ -260,23 +260,23 @@ document.addEventListener("DOMContentLoaded", function () {
         $.ajax({
             type: "POST",
             url: "/api/Clanovi/add",
-            headers: {
-            'Content-Type': 'application/json'  // Ensure the correct header is set
-            },
-            body: JSON.stringify(user),  // Convert the user object to JSON string
+            contentType: 'application/json',  // Ensure the correct header is set
+            data: JSON.stringify(user),  // Convert the user object to JSON string
             success: function (response) {
-                console.log("------------------------------SLANJE EMAILA-----------------------------------------");
-                console.log("Ime: " + ime);
-                console.log("Prezime" + prezime);
-                console.log("Broj telefona" + brojTelefona);
-                console.log("Email" + email);
-                console.log("Datum rodjenja" + datumRodjenja);
-                console.log("Adresa stanovanja" + adresaStanovanja);
-                console.log("Clanarina" + clanarina);
-                console.log("Poziv na broj" + randomNumber);
-                console.log("Email sent successfully!");
-                console.log("AJAX request successful");
-                console.log(response); // Log the response from the server
+               console.log("------------------------------ USPEH -----------------------------------------");
+               console.log("Poslat file u json-u:");
+               console.log(user);
+//                console.log("Ime: " + ime);
+//                console.log("Prezime" + prezime);
+//                console.log("Broj telefona" + brojTelefona);
+//                console.log("Email" + email);
+//                console.log("Datum rodjenja" + datumRodjenja);
+//                console.log("Adresa stanovanja" + adresaStanovanja);
+//                console.log("Clanarina" + clanarina);
+//                console.log("Poziv na broj" + randomNumber);
+//                console.log("Email sent successfully!");
+//                console.log("AJAX request successful");
+//                console.log(response); // Log the response from the server
                 console.log("------------------------------------------------------------------------------------");
 
             },

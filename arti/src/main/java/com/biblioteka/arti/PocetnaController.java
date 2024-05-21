@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 public class PocetnaController {
     @Autowired
     private ClanoviRepo memberRepository;
-    @PostMapping(name = "/add", consumes = "application/json")
+    @PostMapping("/add")
     public ResponseEntity<String> addMember(@RequestBody Clanovi member) {
         // Save member to the database
         memberRepository.save(member);
