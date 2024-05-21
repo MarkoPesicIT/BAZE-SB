@@ -30,6 +30,7 @@ body
 a
 {
 	text-decoration: none;
+	color: none;
 }
 
 *::-webkit-scrollbar
@@ -90,7 +91,7 @@ a
 	flex-direction: row;
 }
 
-.navIkonica
+#navIkonica
 {
 	width: 3rem;
 }
@@ -130,12 +131,12 @@ a
 	outline: 0.4rem solid var(--primary);
 }
 
-.navText
+#navText
 {
 	color: #252525be;
 }
 
-.nav:hover .navText
+.nav:hover #navText
 {
 	color: var(--primary);
 }
@@ -177,7 +178,7 @@ aside
 	background-color: #33FFB6;
 	width: 5rem;
 	height: calc(100vh - 2rem);
-	box-shadow: 0.5rem 0 0.7rem rgba(0, 0, 0, 0.2);
+	box-shadow: 0.5rem 0rem 0.7rem rgba(0, 0, 0, 0.2);
 	transition: width 0.3s ease-in-out;
 	overflow: hidden;
 }
@@ -189,6 +190,7 @@ aside:hover
 
 .ikonicaHover
 {
+	background-color: none !important;
 	transition: 0.2s ease-in-out;
 	opacity: 0;
 	margin-left: 1rem;
@@ -374,8 +376,8 @@ aside:hover .ikonicaHover
 .unosCont
 {
 	box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3),
-	inset 4px 0 3px rgba(0, 0, 0, 0.3),
-	inset -4px 0 3px rgba(0, 0, 0, 0.3);
+	inset 4px 0px 3px rgba(0, 0, 0, 0.3),
+	inset -4px 0px 3px rgba(0, 0, 0, 0.3);
 	font-size: 1.5rem;
 	padding: 0 1rem 0 1rem;
 	border: none;
@@ -511,7 +513,7 @@ span.population
 	transition: opacity 0.3s ease-in-out;
 }
 
-.linija
+#linija
 {
 	width: 100%;
 	border: 2px solid var(--primary);
@@ -537,8 +539,8 @@ span.population
 .toggle
 {
 	box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3),
-	inset 4px 0 3px rgba(0, 0, 0, 0.3),
-	inset -4px 0 3px rgba(0, 0, 0, 0.3);
+	inset 4px 0px 3px rgba(0, 0, 0, 0.3),
+	inset -4px 0px 3px rgba(0, 0, 0, 0.3);
 	font-size: 1.5rem;
 	padding: 0 1rem 0 1rem;
 	border: none;
@@ -630,8 +632,8 @@ span.population
 	padding: 0 8px 0 8px;
 	border-radius: 0.7rem;
 	box-shadow:
-			inset 5px 0 5px rgba(0, 0, 0, 0.3),
-			inset -5px 0 5px rgba(0, 0, 0, 0.3);
+			inset 5px 0px 5px rgba(0, 0, 0, 0.3),
+			inset -5px 0px 5px rgba(0, 0, 0, 0.3);
 	transition: all 0.2s ease-in-out;
 	border: none;
 }
@@ -995,10 +997,6 @@ span.population
 	background-color: #f2f2f2;
 }
 
-.headerTabele{
-	height: 4rem;
-}
 
-.headerTabele:hover{
-	background-color: none !important;
-}
+
+
